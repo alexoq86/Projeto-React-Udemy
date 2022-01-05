@@ -1,0 +1,26 @@
+.nova-pessoa {
+  padding: 25px 50px 20px;
+  margin: 2rem auto;
+  width: 50rem;
+  max-width: 95%;
+  text-align: left;
+  text-shadow: 0.5px 0.5px 3px rgb(0, 0, 0);
+  letter-spacing: 1px;
+}
+
+.nova-pessoa label {
+  margin-top: 1px;
+}
+
+.nova-pessoa input {
+  width: 100%;
+  padding: 5px 5px;
+  border: 1px solid rgb(27, 120, 151);
+  border-radius: 8px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.nova-pessoa input:hover, .nova-pessoa input:active {
+  border-color: rgb(17, 74, 94);
+}
