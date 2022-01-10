@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Card from "../UI/Card";
 import Button from "../UI/Button";
 import Error from "../UI/Error";
-import "./FormInput.css"
+import  classes from "./FormInput.module.css"
 
 
 
@@ -30,10 +30,11 @@ const FormInput = (props) => {
                 idade: age
             }
             props.saveNovoAluno(dataForm);
-            setError(null);
-        } else {
+            setName("");
+            setAge("");
+        }else{
             setError({
-                title: "Error",
+                title: "Erro",
                 message: "Dados inválidos"
             });
             setName("");
@@ -47,13 +48,13 @@ const FormInput = (props) => {
     return (
         <div>
             {error && (<Error tile={error.tile} message={error.message} onConfirm={errorHandler} />)}
-            <Card>
-                <form onSubmit={submitHandler} className="nova-pessoa">
+            <Card className={classes.input}>
+                <form onSubmit={submitHandler}>
                     <label>Nome</label>
                     <input type="text" value={name} onChange={nomeChangeHandler}></input>
                     <label>Idade</label>
                     <input type="number" min="1" max="100" value={age} onChange={idadeChangeHandler}></input>
-                    <Button type={"Sumbit"} text={"Enviar"}></Button>
+                    <br /><Button type={"Sumbit"}>Enviar</Button>
                 </form>
             </Card>
         </div>

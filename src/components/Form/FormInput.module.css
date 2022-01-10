@@ -1,0 +1,50 @@
+
+.input {
+  border: 1px solid rgb(27, 120, 151);
+  margin: 30%;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 25px 50px 20px;
+  margin: 2rem auto;
+  width: 100rem;
+  max-width: 95%;
+  text-align: center;
+  text-shadow: 0.5px 0.5px 3px rgb(0, 0, 0);
+  letter-spacing: 1px;
+  text-align: center;
+
+}
+.input label {
+  margin-top: 1%;
+}
+
+.input input {
+  border: 1px solid rgb(27, 120, 151);
+  margin: 0.2%;
+  border-radius: 3px;
+  box-sizing: border-box;
+  width: 10rem;
+  max-width: 95%;
+
+}
+
+.input button {
+  border-color: rgb(17, 74, 94);
+  position: relative;
+  margin-top: 3%;
+}
+
+.input:hover, .input:active {
+  border-color: rgb(17, 74, 94);
+}
+
+.input label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #4f005f;
+}
