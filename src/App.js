@@ -16,10 +16,10 @@ function App() {
   console.log(alunos);
   
   return (
-    <div>
+    <React.Fragment>
       <FormInput saveNovoAluno={adicionarAluno}/>
       <Data alunos={alunos}/>
-    </div>
+    </React.Fragment>
   );
 }
 
